@@ -12,7 +12,7 @@ If set to `true`, will try to use SMTP.
 
 `TP_SMTP_FROM`
 
-The 'from' e-mailaddress which will be sent from (will not always be recognized).
+The 'from' e-mailaddress which will be sent from.
 
 `TP_SMTP_FROM_NAME`
 
