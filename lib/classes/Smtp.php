@@ -1,29 +1,19 @@
 <?php
-/**
- * Plugin Name: SMTP
- * Description: Send mail through SMTP.
- *
- * Plugin URI: https://github.com/trendwerk/smtp
- *
- * Author: Trendwerk
- * Author URI: https://github.com/trendwerk
- *
- * Version: 1.0.1
- */
+namespace Trendwerk\Smtp;
 
-class TP_SMTP
+final class SMTP
 {
-    function __construct()
+    public function __construct()
     {
         if (defined('TP_SMTP') && true === TP_SMTP) {
-            add_action('phpmailer_init', array( $this, 'smtp' ));
+            add_action('phpmailer_init', array($this, 'setMailer'));
         }
     }
 
     /**
      * Send e-mail via SMTP
      */
-    function smtp($mailer)
+    public function setMailer($mailer)
     {
         if (! is_email(TP_SMTP_FROM) || ! defined('TP_SMTP_HOST')) {
             return;
@@ -46,4 +36,4 @@ class TP_SMTP
             $mailer->Password = TP_SMTP_PASSWORD;
         }
     }
-} new TP_SMTP;
+}
