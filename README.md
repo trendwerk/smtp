@@ -47,3 +47,20 @@ The username to authenticate with.
 `TP_SMTP_PASSWORD`
 
 The password to authenticate with.
+
+### Example
+
+```
+/**
+ * SMTP settings
+ */
+define('TP_SMTP', true);
+define('TP_SMTP_FROM', 'you@domain.com');
+define('TP_SMTP_FROM_NAME', 'Your Name');
+define('TP_SMTP_HOST', 'smtp.gmail.com');
+define('TP_SMTP_SECURE', tls);
+define('TP_SMTP_PORT', 587);
+define('TP_SMTP_AUTH', true);
+define('TP_SMTP_USERNAME', 'you@domain.com');
+define('TP_SMTP_PASSWORD', 'password');
+```
