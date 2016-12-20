@@ -1,7 +1,7 @@
 <?php
 namespace Trendwerk\Smtp;
 
-final class SMTP
+final class Smtp
 {
     public function __construct()
     {

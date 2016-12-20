@@ -8,8 +8,14 @@
  * Author: Trendwerk
  * Author URI: https://github.com/trendwerk
  *
- * Version: 1.2.0
+ * Version: 1.1.0
  */
 
- include_once('lib/autoload.php');
- include_once('lib/init.php');
+namespace Trendwerk\Smtp;
+
+include_once(__DIR__ . 'lib/autoload.php');
+
+/**
+ * Initialize
+ */
+new Smtp();
