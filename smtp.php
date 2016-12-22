@@ -13,7 +13,7 @@
 
 namespace Trendwerk\Smtp;
 
-include_once(__DIR__ . 'lib/autoload.php');
+include_once('lib/autoload.php');
 
 /**
  * Initialize
