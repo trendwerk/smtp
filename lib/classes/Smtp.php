@@ -3,7 +3,7 @@ namespace Trendwerk\Smtp;
 
 final class Smtp
 {
-    public function __construct()
+    public function init()
     {
         if (defined('TP_SMTP') && true === TP_SMTP) {
             add_action('phpmailer_init', array($this, 'setMailer'));

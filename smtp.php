@@ -18,4 +18,5 @@ include_once('lib/autoload.php');
 /**
  * Initialize
  */
-new Smtp();
+$smtp = new Smtp();
+$smtp->init();
