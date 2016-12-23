@@ -10,9 +10,6 @@ final class Smtp
         }
     }
 
-    /**
-     * Send e-mail via SMTP
-     */
     public function setMailer($mailer)
     {
         if (! is_email(TP_SMTP_FROM) || ! defined('TP_SMTP_HOST')) {

@@ -15,8 +15,5 @@ namespace Trendwerk\Smtp;
 
 include_once('lib/autoload.php');
 
-/**
- * Initialize
- */
 $smtp = new Smtp();
 $smtp->init();
