@@ -8,7 +8,7 @@
  * Author: Trendwerk
  * Author URI: https://github.com/trendwerk
  *
- * Version: 1.1.0
+ * Version: 1.0.2
  */
 
 namespace Trendwerk\Smtp;
